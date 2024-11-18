@@ -1,0 +1,141 @@
+body {
+    background-color: #FFD700;
+    color: #FF0000;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    overflow: hidden;
+    animation: backgroundChange 5s infinite alternate;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px #FF00FF;
+    animation: shake 0.5s infinite;
+}
+
+.container {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.annoying-button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #FF4500;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    animation: bounce 0.5s infinite alternate;
+}
+body {
+    background-color: #FFD700;
+    color: #FF0000;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px #FF00FF;
+}
+
+.container {
+    position: relative;
+}
+
+.annoying-button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #FF4500;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Add a border or background color for visibility */
+    border: 2px solid #000; /* Example border */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.gif-container {
+    text-align: center; /* Center the GIF */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.dancing-gif {
+    max-width: 100%; /* Ensure it doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+@keyframes backgroundChange {
+    0% { background-color: #FFD700; }
+    100% { background-color: #FF69B4; }
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+    100% { transform: translate(0); }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
